@@ -1,108 +1,121 @@
 body {
-    font-size: 16px;
-    color: #fff;
-    background-color: #61122f;
-    font-family: 'Oxygen', sans-serif;
+  font-family: 'Lato';
 }
 
-/** HEADER **/
-#header-nav {
-    background-color: #f6b319;
-    border-radius: 0;
-    border: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Catamaran';
+  font-weight: 800 !important;
 }
 
-.navbar-brand {
-    padding-top: 25px;
-    padding-bottom: 40px;
-}
-.navbar-brand a:hover, .navbar-brand a:focus {
-    text-decoration: none;
-}
-.navbar-brand h1 { /* Restaurant name */
-    font-family: 'Lora', serif;
-    color: #557c3e;
-    font-size: 1.7em;
-    text-transform: uppercase;
-    position: relative;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px #222;
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: .75;
-    padding-bottom: 20px;
+.btn-xl {
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
 }
 
-#nav-list {
-    margin-top: 10px;
-}
-#nav-list a {
-    color: #951C49;
-    text-align: center;
-}
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-    border: 1px solid #61122f;
-}
-.navbar-header button.navbar-toggle {
-    clear: both;
-    margin-top: -33px;
+.bg-black {
+  background-color: #000 !important;
 }
 
-
-#nav-list li p {
-    background: #8e24aa;
+.rounded-pill {
+  border-radius: 5rem;
 }
 
-/* END HEADER */
-
-/* HOME PAGE */
-
-#home-tiles .item-text {
-    background: #5e5e5e;
-    padding: 10px;
+.navbar-custom {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-#home-tiles .item-text p {
-    font-size: 1.3em;
-    font-weight: 400;
+.navbar-custom .navbar-brand {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
 }
 
-/* END OF HOME PAGE */
-/********** Large devices only **********/
-@media (min-width: 1200px) {
+.navbar-custom .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
 }
 
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
+header.masthead {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
-/********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
+header.masthead .masthead-content {
+  z-index: 1;
+  position: relative;
 }
 
-/********** Extra small devices only **********/
-@media (max-width: 767px) {
-    /* Header */
-    .navbar-brand {
-        padding-top: 10px;
-    }
-    .navbar-brand h1 { /* Restaurant name */
-        padding-top: 10px;
-        font-size: 4vw; /* 1vw = 1% of viewport width */
-    }
-
-    #collapsable-nav a { /* Collapsed nav menu text */
-        font-size: 1.2em;
-    }
-    #collapsable-nav a span { /* Collapsed nav menu glyph */
-        font-size: 1em;
-        margin-right: 5px;
-    }
-    /* End Header */
-
-    /* Home Page */
-    .menu-item-description {
-        text-align: center;;
-    }
-
+header.masthead .masthead-content .masthead-heading {
+  font-size: 4rem;
 }
+
+header.masthead .masthead-content .masthead-subheading {
+  font-size: 2rem;
+}
+
+header.masthead .bg-circle {
+  z-index: 0;
+  position: absolute;
+  border-radius: 100%;
+  background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
+}
+
+header.masthead .bg-circle-1 {
+  height: 90rem;
+  width: 90rem;
+  bottom: -55rem;
+  left: -55rem;
+}
+
+header.masthead .bg-circle-2 {
+  height: 50rem;
+  width: 50rem;
+  top: -25rem;
+  right: -25rem;
+}
+
+header.masthead .bg-circle-3 {
+  height: 20rem;
+  width: 20rem;
+  bottom: -10rem;
+  right: 5%;
+}
+
+header.masthead .bg-circle-4 {
+  height: 30rem;
+  width: 30rem;
+  top: -5rem;
+  right: 35%;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(10rem + 55px);
+    padding-bottom: 10rem;
+  }
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 6rem;
+  }
+  header.masthead .masthead-content .masthead-subheading {
+    font-size: 4rem;
+  }
+}
+
