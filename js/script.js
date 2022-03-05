@@ -6,16 +6,16 @@
 // or "j", otherwise, the program should say "Good Bye". So, the final output
 // on the console should look like this:
 /*
-Hello Yaakov
-Good Bye John
-Good Bye Jen
-Good Bye Jason
-Hello Paul
-Hello Frank
-Hello Larry
-Hello Paula
-Hello Laura
-Good Bye Jim*/
+Hello Ankit
+Good Bye Aman
+Good Bye Aryan
+Good Bye Ajit
+Hello Manu
+Hello Harsh
+Hello Ritish
+Hello Sahil
+Hello Krishna
+Good Bye Sid*/
 
 /*Hello speaker function*/
 const helloSpeaker = {
@@ -44,7 +44,7 @@ const byeSpeaker = {
 //3
 //This choose the names
 (function () {
-	var names = ['Yaakov', 'John', 'Jen', 'Jason', 'Paul', 'Frank', 'Larry', 'Paula', 'Laura', 'Jim'];
+	var names = ['Ankit', 'Aman', 'Aryan', 'Ajit', 'Manu', 'Harsh', 'Ritish', 'Sahil', 'Krishna', 'Sid'];
 	for (var i = 0; i < names.length; i++) {
 		var name = names[i];
 		var firstLetter = name.charAt(0).toLowerCase();
