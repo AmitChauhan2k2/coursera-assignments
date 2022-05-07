@@ -1,2 +1,0 @@
-# coursera-assignments
-coursera assignments
